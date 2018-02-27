@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - zhongfucheng@localhost" uuid="360a4988-457c-4a1f-8717-ed35643f7940">
+    <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="zhongfucheng">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sys"/>
+      <table id="6" parent="1" name="user"/>
+      <table id="7" parent="1" name="customer"/>
+      <column id="8" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(110)|0</data-type>
+      </column>
+      <column id="9" parent="6" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="10" parent="6" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="11" parent="6" name="email">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="12" parent="6" name="birthday">
+        <data-type>date|0</data-type>
+      </column>
+      <index id="13" parent="6" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="14" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="15" parent="6" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="16" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="17" parent="7" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="18" parent="7" name="gender">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="19" parent="7" name="birthday">
+        <data-type>date|0</data-type>
+      </column>
+      <column id="20" parent="7" name="cellphone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="21" parent="7" name="email">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="22" parent="7" name="preference">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="23" parent="7" name="type">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="24" parent="7" name="description">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="25" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
